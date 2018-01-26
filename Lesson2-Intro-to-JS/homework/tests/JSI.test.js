@@ -1,57 +1,57 @@
 var exercises = require('../homework');
 
 describe('newString', function() {
-  it('should be a string', function() {
-    expect(typeof exercises.newString).toBe('string');
+  it('newString', function() {
+    expect(typeof exercises.newString).toBe('newString');
   });
 });
 
 describe('newNum', function() {
-  it('should be a number', function() {
-    expect(typeof exercises.newNum).toBe('number');
+  it('newNum', function() {
+    expect(typeof exercises.newNum).toBe('newNum');
   });
 });
 
 describe('newBool', function() {
-  it('should be a boolean', function() {
-    expect(typeof exercises.newBool).toBe('boolean');
+  it('newBool', function() {
+    expect(typeof exercises.newBool).toBe('newBool');
   });
 });
 
 describe('newSubtract', function() {
-  it('should be a boolean', function() {
+  it('newSubtract', function() {
     expect(exercises.newSubtract).toBe(true);
   });
 });
 
 describe('newMultiply', function() {
-  it('should be a boolean', function() {
+  it('newMultiply', function() {
     expect(exercises.newMultiply).toBe(true);
   });
 });
 
 describe('newModulo', function() {
-  it('should be a boolean', function() {
+  it('newModulo', function() {
     expect(exercises.newModulo).toBe(true);
   });
 });
 
 describe('returnString(str)', function() {
-  it('should return the string provided', function() {
+  it('returnString', function() {
     let string = 'lambdaSchool';
     expect(exercises.returnString(string)).toBe(string);
   });
 });
 
 describe('add(x, y)', function() {
-  it('should return the sum of the two arguments', function() {
+  it('add', function() {
     expect(exercises.add(5, 5)).toBe(10);
     expect(exercises.add(-1, 5)).toBe(4);
   });
 });
 
 describe('subtract(x, y)', function() {
-  it('should return the difference of the two arguments', function() {
+  it('subtract', function() {
     expect(exercises.subtract(5, 5)).toBe(0);
     expect(exercises.subtract(-1, 5)).toBe(-6);
     expect(exercises.subtract(5, -5)).toBe(10);
@@ -60,7 +60,7 @@ describe('subtract(x, y)', function() {
 });
 
 describe('divide(x, y)', function() {
-  it('should return the quotient of the two arguments', function() {
+  it('divide', function() {
     expect(exercises.divide(5, 5)).toBe(1);
     expect(exercises.divide(10, 5)).toBe(2);
     expect(exercises.divide(11, 2)).toBe(5.5);
@@ -68,7 +68,7 @@ describe('divide(x, y)', function() {
 });
 
 describe('multiply(x, y)', function() {
-  it('should return the product of the two arguments', function() {
+  it('multiply', function() {
     expect(exercises.multiply(5, 5)).toBe(25);
     expect(exercises.multiply(10, -5)).toBe(-50);
     expect(exercises.multiply(11, 0)).toBe(0);
@@ -77,7 +77,7 @@ describe('multiply(x, y)', function() {
 
 
 describe('areEqual(x, y)', function() {
-  it('should return true if the arguments are equal', function() {
+  it('areEqual', function() {
     expect(exercises.areEqual(15, 15)).toBe(true);
     expect(exercises.areEqual(90, 50)).toBe(false);
     expect(exercises.areEqual('test', 'test')).toBe(true);
@@ -85,14 +85,14 @@ describe('areEqual(x, y)', function() {
 });
 
 describe('areSameLength(str1, str2)', function() {
-  it('should return true if the arguments have the same length', function() {
+  it('areSameLength', function() {
     expect(exercises.areSameLength('hi', 'there')).toBe(false);
     expect(exercises.areSameLength('javascript', 'bumfuzzled')).toBe(true);
   });
 });
 
 describe('lessThanNinety(num)', function() {
-  it('should return true if the argument is less than ninety', function() {
+  it('lessThanNinety', function() {
     expect(exercises.lessThanNinety(15)).toBe(true);
     expect(exercises.lessThanNinety(90)).toBe(false);
     expect(exercises.lessThanNinety(100)).toBe(false);
@@ -100,7 +100,7 @@ describe('lessThanNinety(num)', function() {
 });
 
 describe('greaterThanFifty(num)', function() {
-  it('should return true if the argument is greater than fifty', function() {
+  it('greaterThanFifty', function() {
     expect(exercises.greaterThanFifty(15)).toBe(false);
     expect(exercises.greaterThanFifty(50)).toBe(false);
     expect(exercises.greaterThanFifty(60)).toBe(true);
@@ -108,7 +108,7 @@ describe('greaterThanFifty(num)', function() {
 });
 
 describe('getRemainder(x, y)', function() {
-  it('should return the division remainder of the two arguments', function() {
+  it('getRemainder', function() {
     expect(exercises.getRemainder(5, 5)).toBe(0);
     expect(exercises.getRemainder(10, 5)).toBe(0);
     expect(exercises.getRemainder(11, 2)).toBe(1);
@@ -116,7 +116,7 @@ describe('getRemainder(x, y)', function() {
 });
 
 describe('isEven(num)', function() {
-  it('should return the bool true if the argument is even, false otherwise', function() {
+  it('isEven', function() {
     expect(exercises.isEven(6)).toBe(true);
     expect(exercises.isEven(7)).toBe(false);
     expect(exercises.isEven(0)).toBe(true);
@@ -124,7 +124,7 @@ describe('isEven(num)', function() {
 });
 
 describe('isOdd(num)', function() {
-  it('should return the bool true if the argument is odd, false otherwise', function() {
+  it('isOdd', function() {
     expect(exercises.isOdd(6)).toBe(false);
     expect(exercises.isOdd(7)).toBe(true);
     expect(exercises.isOdd(0)).toBe(false);
@@ -132,7 +132,7 @@ describe('isOdd(num)', function() {
 });
 
 describe('square(num)', function() {
-  it('should return the argument after squaring it', function() {
+  it('square', function() {
     expect(exercises.square(6)).toBe(36);
     expect(exercises.square(7)).toBe(49);
     expect(exercises.square(0)).toBe(0);
@@ -141,7 +141,7 @@ describe('square(num)', function() {
 });
 
 describe('cube(num)', function() {
-  it('should return the argument after cubing it', function() {
+  it('cube', function() {
     expect(exercises.cube(3)).toBe(27);
     expect(exercises.cube(0)).toBe(0);
     expect(exercises.cube(-5)).toBe(-125);
@@ -149,7 +149,7 @@ describe('cube(num)', function() {
 });
 
 describe('raiseToPower(num, exponent)', function() {
-  it('should return the argument after raising it to the exponent\'s power', function() {
+  it('raiseToPower', function() {
     expect(exercises.raiseToPower(2, 2)).toBe(4);
     expect(exercises.raiseToPower(2, 3)).toBe(8);
     expect(exercises.raiseToPower(0, 5)).toBe(0);
@@ -158,7 +158,7 @@ describe('raiseToPower(num, exponent)', function() {
 });
 
 describe('roundNumber(num)', function() {
-  it('should return the argument after rounding it', function() {
+  it('roundNumber', function() {
     expect(exercises.roundNumber(1.5)).toBe(2);
     expect(exercises.roundNumber(2)).toBe(2);
     expect(exercises.roundNumber(0.1)).toBe(0);
@@ -166,7 +166,7 @@ describe('roundNumber(num)', function() {
 });
 
 describe('roundUp(num)', function() {
-  it('should return the argument after rounding it up', function() {
+  it('roundUp', function() {
     expect(exercises.roundUp(1.5)).toBe(2);
     expect(exercises.roundUp(2)).toBe(2);
     expect(exercises.roundUp(0.1)).toBe(1);
@@ -174,28 +174,28 @@ describe('roundUp(num)', function() {
 });
 
 describe('addExclamationPoint(str)', function() {
-  it('should add an exclamation point to the end of the string', function() {
+  it('addExclamationPoint', function() {
     expect(exercises.addExclamationPoint('hello world')).toBe('hello world!');
     expect(exercises.addExclamationPoint('LambdaSchool')).toBe('LambdaSchool!');
   });
 });
 
 describe('combineNames(firstName, lastName)', function() {
-  it('should return the two strings combined into one with a space separating them', function() {
+  it('combineNames', function() {
     expect(exercises.combineNames('hello', 'world')).toBe('hello world');
     expect(exercises.combineNames('Lambda', 'School')).toBe('Lambda School');
   });
 });
 
 describe('getGreeting(name)', function() {
-  it('should return the string \'Hello {name}!\'', function() {
+  it('getGreeting \'Hello {name}!\'', function() {
     expect(exercises.getGreeting('Ben')).toBe('Hello Ben!');
     expect(exercises.getGreeting('LambdaSchool')).toBe('Hello LambdaSchool!');
   });
 });
 
 describe('getRectangleArea(length, width)', function() {
-  it('should return the correct area', function() {
+  it('getRectangleArea', function() {
     expect(exercises.getRectangleArea(2, 2)).toBe(4);
     expect(exercises.getRectangleArea(3, 6)).toBe(18);
     expect(exercises.getRectangleArea(0, 2)).toBe(0);
@@ -203,7 +203,7 @@ describe('getRectangleArea(length, width)', function() {
 });
 
 describe('getTriangleArea(base, height)', function() {
-  it('should return the correct area', function() {
+  it('getTriangleArea', function() {
     expect(exercises.getTriangleArea(2, 2)).toBe(2);
     expect(exercises.getTriangleArea(0, 2)).toBe(0);
   });
