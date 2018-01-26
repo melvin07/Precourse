@@ -1,8 +1,8 @@
 var exercises = require('../homework');
 
-describe('newString', function() {
-  it('should be a string', function() {
-    expect(typeof exercises.newString).toBe('string');
+function(newString() {
+  console.log(String) {
+    return string
   });
 });
 
